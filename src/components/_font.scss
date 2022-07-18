@@ -1,0 +1,56 @@
+// ignore I would like to use the following syntax but it is not didn't have enough time
+$default-font: "Mark", "OkojoPro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+  "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$header-font: "TT-Travels-Next-Bold", "CheltenhamStd", "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+
+$default-font-sizes: (
+  200: 12px,
+  250: 13px,
+  300: 14px,
+  350: 15px,
+  400: 16px,
+  450: 17px,
+  500: 18px,
+  550: 20px,
+  600: 22px,
+  700: 24px,
+  720: 28px,
+  730: 30px,
+  750: 34px,
+  800: 40px,
+  900: 50px,
+);
+
+$header-font-sizes: (
+  30: 16px,
+  50: 18px,
+  100: 20px,
+  200: 24px,
+  280: 28px,
+  300: 30px,
+  330: 32px,
+  370: 34px,
+  400: 36px,
+  450: 40px,
+  480: 45px,
+  500: 48px,
+  510: 50px,
+  600: 60px,
+  1000: 100px,
+);
+
+@function calculateRem($size) {
+  $remSize: $size / 18.5;
+  @return #{$remSize}vw;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: get-font-size($style, $level: 500);
+}
+
+@function get-font-size($style, $level: 500) {
+  @return map_get($style, $level);
+}

@@ -1,0 +1,5 @@
+.jumbotron{
+    background-color: transparent !important;  /* Hack, over ride bootstrap style*/
+    margin-bottom: 0;
+    
+}

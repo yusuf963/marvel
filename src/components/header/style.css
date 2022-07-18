@@ -1,0 +1,11 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  margin: 50px;
+}
