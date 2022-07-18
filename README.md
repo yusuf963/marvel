@@ -66,17 +66,24 @@ User is able to see the spinner while the data is loading.
 
 I rather kept the user at the same page, and just show the details of the character.on hover for a better user experience. and fast response.
 
+# Clone the repository from [GitHub]
+
+1. Clone the repository
+   `git clone https://github.com/yusuf963/marvel.git`
+2. install npm packages
+   `npm install`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## There is two ways to run this project:
+# There are two ways to run this project:
 
 ### Run the project using docker-compose
 
 1. make sure you have installed docker desktop and it is running
 2. run the following command in the project directory
-   `docker-compose up -d`
+   `docker-compose up --build`
    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Run the App locally using npm scripts
